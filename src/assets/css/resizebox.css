@@ -1,0 +1,134 @@
+﻿
+/*resize-box*/
+.resize-box {
+    background: rgba(77, 77, 77, 0.5);
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    z-index:1;
+    cursor:move;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+    border:1px solid rgba(255,255,255,0.5);
+}
+
+.resize-box .rz {
+    width:7px;
+    height:7px;
+    background:#fff;
+    border:1px solid #000;
+    opacity:0.5;
+    position:absolute;
+        opacity:0.5;
+}
+
+
+/*north east*/
+.resize-box .rz-ne {
+    right:-4px;
+    top:-4px;
+    cursor:ne-resize;
+}
+
+/*north*/
+.resize-box .rz-n {
+    left:50%;
+    margin-left:-4px;
+    top:-4px;
+    cursor:n-resize;
+}
+/*north west*/
+.resize-box .rz-nw {
+    top:-4px;
+    left:-4px;
+    cursor:nw-resize;
+}
+
+
+/*west*/
+.resize-box .rz-w {
+    top:50%;
+    margin-top:-4px;
+    left:-4px;
+    cursor:w-resize;
+}
+
+
+/*west south */
+.resize-box .rz-sw {
+    left:-4px;
+    bottom:-4px;
+    cursor:sw-resize;
+}
+
+
+
+/*south*/
+.resize-box .rz-s {
+    bottom:-4px;
+    left:50%;
+    margin-left:-4px;
+    cursor:s-resize;
+}
+
+/*south east */
+.resize-box .rz-se {
+    bottom:-4px;
+    right:-4px;
+    cursor:se-resize;
+}
+
+
+/*east*/
+.resize-box .rz-e {
+    top:50%;
+    margin-top:-4px;
+    right:-4px;
+    cursor:e-resize;
+}
+
+
+/*link-box*/
+
+.link-box {
+    position:absolute;
+}
+
+.link-box.active .resize-box{
+
+  border: 1px solid yellow;
+}
+
+.rz-delete {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 24px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:rgba(255,255,255,0.6);
+    z-index:2;
+    text-align:center;
+    text-decoration:none;
+    display:none;
+    -webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
+.rz-delete:hover {
+    background:rgba(255,255,255,0.9);
+    color: #666;
+}
+.rz-delete.rz-hide {
+    display:none!important;
+}
+.link-box:hover .rz-delete {
+    display:block;
+}
+

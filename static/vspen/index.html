@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>代码视图</title>
+
+<link href="css/all.css" rel="stylesheet" />
+<link href="css/prism.css" rel="stylesheet" />
+<script src="js/all.js"></script>
+<script src="js/codepen.js"></script>
+<script src="js/store.js"></script>
+
+</head>
+<body>
+
+ <div class="code-container show-result" id="code-container" style="height:800px;border-bottom:10px solid #3D3D3E">
+
+        <div class="code-nav">
+            <ul class="code-menu" id="code-menu">
+              
+                <li class="code-type active">
+                 <a href="javascript:;">
+                        HTML
+                 </a>
+                </li>
+
+                <li class="code-type">
+                    <a href="javascript:;">
+                    CSS
+                   </a>
+                </li>
+
+                <li class="code-type">
+
+                   <a href="javascript:;" >
+                    JavaScript
+                   </a>
+
+                </li>
+
+                <li class="result active">
+                   <a href="javascript:;">
+                        Result
+                   </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="code-boxs split-output"  id="output">
+           
+            <div class="code-box active">
+                   <pre class="language-html" data-src="d1.html"><code class="language-html" id="code-html"> </code></pre>
+
+                <a href="javascript:;" class="copyBtn ts" id="copyHtml">
+                    复制代码
+                </a>
+            </div>
+
+            <div class="code-box">
+                   <pre class="language-css"><code class="language-css" id="code-css"> </code></pre>
+            </div>
+
+            <div class="code-box">
+                  <pre><code class="language-javascript" id="code-javascript"></code></pre>
+            </div>
+
+            <div class="code-box result-box active" id="code-result">
+            </div>
+        </div>
+
+    </div>
+
+  <textarea style="position:absolute;top:0;opacity:0" id="codehtml">
+
+</textarea>
+
+</body>
+</html>

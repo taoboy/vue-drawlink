@@ -1,0 +1,113 @@
+﻿
+/*common*/
+body {height:100%;  color:#333;}
+div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dl, dt, dd {margin:0;padding:0;} 
+header, section, footer, aside, nav, article, figure, figcaption {display: block;}
+table {border-collapse:collapse;}
+img {border:none; vertical-align: middle;}
+ul, li {list-style:none;}
+input:focus, textarea:focus {outline:none;}
+.cf:before,.cf:after{content:"";display:table;}.cf:after{clear:both;}.cf{zoom:1;}
+.clear{height:0px; line-height:0px;clear:both;font-size:1px;}
+.ctl,.fl,.fc,.cnl{float:left;}
+.ctr,.fr,.cnr{float:right;}
+
+
+/*resize-box*/
+.resize-box {
+    /*background:rgba(0,0,0,0.5);*/
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    z-index:1;
+    cursor:move;
+}
+
+.resize-box .rz {
+    background:#2AAE4B;
+    border-radius:4px;
+    width:12px;
+    height:12px;
+    position:absolute;
+}
+
+
+/*north east*/
+.resize-box .rz-ne {
+    right:-6px;
+    top:-6px;
+    cursor:ne-resize;
+}
+
+/*north*/
+.resize-box .rz-n {
+    left:50%;
+    margin-left:-6px;
+    top:-6px;
+    cursor:n-resize;
+}
+/*north west*/
+.resize-box .rz-nw {
+    top:-6px;
+    left:-6px;
+    cursor:nw-resize;
+}
+
+
+/*west*/
+.resize-box .rz-w {
+    top:50%;
+    margin-top:-6px;
+    left:-6px;
+    cursor:w-resize;
+}
+
+
+/*west south */
+.resize-box .rz-sw {
+    left:-6px;
+    bottom:-6px;
+    cursor:sw-resize;
+}
+
+
+
+/*south*/
+.resize-box .rz-s {
+    bottom:-6px;
+    left:50%;
+    margin-left:-6px;
+    cursor:s-resize;
+}
+
+/*south east */
+.resize-box .rz-se {
+    bottom:-6px;
+    right:-6px;
+    cursor:se-resize;
+}
+
+
+/*east*/
+.resize-box .rz-e {
+    top:50%;
+    margin-top:-6px;
+    right:-6px;
+    cursor:e-resize;
+}
+
+
+/*test box*/
+.box {
+    width:300px;
+    height:300px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+    border:1px solid #ddd;
+    background:#fff;
+}
+
